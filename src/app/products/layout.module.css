@@ -1,0 +1,11 @@
+.nav a {
+  padding: 0px 8px;
+  text-decoration: none;
+}
+
+.div {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 5px solid pink;
+  display: block;
+}
