@@ -1,9 +1,16 @@
-import Metadata from "next";
+import { Metadata } from "next";
 // import { Inter } from "@next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import styles from "./layout.module.css";
 
+export const metadata: Metadata = {
+  title: "멋진 제품 사이트",
+  description: "멋진 제품을 판매하는 곳입니다.",
+  icons: {
+    icon: "favicon.ico",
+  },
+};
 // const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: typeof Metadata = {
