@@ -1,17 +1,19 @@
 import Link from "next/link";
 import styles from "./layout.module.css";
+import { getProducts } from "@/service/products";
 
 const products = ["shirt", "pants", "skirt", "shoes"];
 
-export default function ProductsIndex() {
+export default async function ProductsPage() {
+  const products = await getProducts();
   return (
     <>
       <h1>제품 소개 페이지</h1>
       <nav className={styles.nav}>
         <ul>
-          {products.map((product, index) => (
+          {products.map(({ id, name }, index) => (
             <li key={index}>
-              <Link href={`/products/${product}`}>{product}</Link>
+              <Link href={`/products/${id}`}>{name}</Link>
             </li>
           ))}
         </ul>
