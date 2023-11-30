@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { Nanum_Gothic } from "next/font/google";
-// import GoogleFonts from "next-google-fonts";
 import Link from "next/link";
 import "./globals.css";
 import styles from "./layout.module.css";
